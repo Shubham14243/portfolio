@@ -85,12 +85,12 @@ const Resume = () => {
                                     <span className='text-lg px-6 text-gray-400'>Pine Labs, Bangalore</span>
                                 </h1>
                                 <h1 className=' px-6'>
-                                    <span className='text-lg text-gray-400'>* Led full stack feature development in Node.js and PHP, enhancing application functionality and performance across both Back‑End and
-                                    Front‑End.</span>
+                                    <span className='text-lg text-gray-400'>* Led the design and implementation of a robust REST API to support the cart functionality in Node.js, enhancing back‑end functionality
+                                    and performance, while developing and optimizing key components to improve system efficiency and user experience.</span>
                                 </h1>
                                 <h1 className=' px-6'>
-                                    <span className='text-lg text-gray-400'>* Developed an automated tool using Python, Regex, and the Jira API to streamline ticket handling, significantly improving efficiency and
-                                    reducing manual workload.</span>
+                                    <span className='text-lg text-gray-400'>* Directed feature development in PHP, improving both front‑end and back‑end performance by implementing best practices in clean code
+                                    and scalable design to enhance overall application functionality.</span>
                                 </h1>
                             </li>
                         </ul>
@@ -111,7 +111,7 @@ const Resume = () => {
                                     <span className='text-lg px-6 text-gray-400'>Vellore Institute of Technology, Vellore</span>
                                 </h1>
                                 <h1 className=''>
-                                    <span className='text-lg px-6 text-gray-400'>Score - 9.09 CGPA</span>
+                                    <span className='text-lg px-6 text-gray-400'>Score - 9.01 CGPA</span>
                                 </h1>
                             </li>
                             <li className='mb-2'>
