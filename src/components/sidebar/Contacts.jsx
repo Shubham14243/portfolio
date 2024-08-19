@@ -19,9 +19,9 @@ const Contacts = () => {
                         <h1>
                             <span className='text-lg'>Email</span>
                         </h1>
-                        <a className='text-primary' href="mailto:skgsmasher14243@gmail.com">
+                        <a className='text-primary' href="mailto:guptashubham14243@gmail.com">
                             <span>
-                                skgsmasher14243@gmail.com
+                                guptashubham14243@gmail.com
                             </span>
                         </a>
                     </div>
