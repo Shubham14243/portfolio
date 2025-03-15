@@ -4,8 +4,32 @@ import toast from 'react-hot-toast';
 export const useSendMessage = () => {
 
     const [loading, setLoading] = useState(false);
+    const mailKey = process.env.REACT_APP_API_KEY;
+    const host = process.env.REACT_APP_HOST;
 
-    const sendMessage = ({ name, email, message }) => {
+    const sendMail = async (recipient, template, params) => {
+
+        const res = await fetch(`${host}/api/mail/send`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "*/*"
+            },
+            body: JSON.stringify({
+                "mailkey": mailKey,
+                "template_id": template,
+                "recipient": recipient,
+                "params": params
+            })
+        });
+
+        const data = await res.json();
+
+        return data;
+
+    }
+
+    const sendMessage = async ({ name, email, message }) => {
 
         setLoading(true);
 
@@ -15,6 +39,13 @@ export const useSendMessage = () => {
 
             if (!success) {
                 return;
+            }
+
+            const emailData = await sendMail([email, process.env.REACT_APP_SELF_EMAIL], "2", { name, email, message });
+            console.log(emailData);
+
+            if (emailData.status != "success") {
+                toast.error(emailData.message);
             }
 
             toast.success("Message sent successfully!");

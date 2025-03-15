@@ -57,7 +57,7 @@ const Contact = () => {
                         </div>
                         <div className='w-full text-center'>
                             <button className="btn btn-primary btn-outline btn-wide" role='submit'>
-                                <span className='text-lg'>Send</span>
+                                {loading ? <span className="loading loading-bars loading-xl"></span> : <span className='text-lg'>Send</span>}
                                 <VscSend className='h-5 w-5' />
                             </button>
                         </div>
